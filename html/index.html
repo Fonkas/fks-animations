@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fks-animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="book" class="hidden">
+        <div class="page">
+            <header class="head">
+                <div class="brand">
+                    <div class="title" data-l="title"></div>
+                    <div class="subtitle" data-l="subtitle"></div>
+                </div>
+                <div class="tools">
+                    <button class="tool" id="btn-body"></button>
+                    <button class="tool" id="btn-cam"></button>
+                    <button class="tool sq" id="btn-close"></button>
+                </div>
+            </header>
+
+            <div class="rule"><span></span></div>
+
+            <nav class="tabs" id="tabs"></nav>
+
+            <div class="section"><span id="section-name"></span><em id="section-count"></em></div>
+
+            <div class="searchbar">
+                <div class="search" id="search">
+                    <span id="search-ico"></span>
+                    <input id="q" type="text" autocomplete="off" spellcheck="false">
+                    <button class="clear" id="btn-clear"></button>
+                </div>
+                <button class="tool" id="btn-sort"></button>
+            </div>
+
+            <div class="grid" id="grid"></div>
+
+            <footer class="foot">
+                <div class="foot-label" data-l="shortcuts"></div>
+                <div class="slots" id="slots"></div>
+                <button class="stopbtn idle" id="btn-stop"></button>
+            </footer>
+            <div class="help" data-l="help"></div>
+        </div>
+        <div id="toast"></div>
+    </div>
+    <div id="ghost"></div>
+
+    <script src="icons.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
